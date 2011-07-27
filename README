@@ -1,0 +1,27 @@
+RT2501U/RT2571W Wi-Fi driver for ultra-embedded devices
+
+This driver enables the use of the low-cost RT2501U/RT2571W SoftMAC Wi-Fi cards on platforms with very limited resources.
+It is particularily well-suited for cost-sensitive consumer electronic devices. This driver is currently used in mass production with the Nabaztag/tag devices (aka Nabaztag V2).
+
+Features
+* Industry-proven
+* Written in C
+* High portability
+* Low memory footprint
+* Low CPU resource usage
+* Integrates 802.11-compatible stack
+* Supports Client (managed) mode
+* Supports Access point mode
+* Supports WEP
+* Supports WPA-PSK
+
+Typical environment
+* 30MHz ARM7-based microcontroller
+* 64kb Flash[1]
+* 64kb RAM[1]
+* USB host controller (DMA-capable or with shared memory)
+* Any Wi-Fi card based on the Ralink RT2501U/RT2571W chipset
+* USB stack (not included)
+* TCP/IP stack (not included)
+[1] taking a reasonable application into account. The driver itself uses 30kb Flash on ARM7 including an USB stack, a C library and debug features ; and RAM usage can be as low as 16kb, depending on application constraints.
+
